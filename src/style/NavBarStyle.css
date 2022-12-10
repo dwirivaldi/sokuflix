@@ -14,7 +14,6 @@ nav a {
 }
 nav span{
     cursor: pointer;
-    color: #EE9B00;
     margin-left: 40px;
     font-size: .85rem;
     text-transform: uppercase;
@@ -26,6 +25,9 @@ nav span:hover{
 }
 span #HomeLight, #MoviesLight, #TrendingLight, #PricingLight{
     color: #fff;
+}
+span #HomeLight, #MoviesLight:hover, #TrendingLight:hover, #PricingLight:hover{
+    border-bottom: 2px solid #ff206e;
 }
 span #HomeLight:hover, #MoviesLight:hover, #TrendingLight:hover, #PricingLight:hover{
     border-bottom: 2px solid #ff206e;
