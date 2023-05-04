@@ -16,20 +16,19 @@ function Movies() {
   const Api = `https://api.themoviedb.org/3/${Shown}/movie`;
   const Images = "https://image.tmdb.org/t/p/w500";
 
-  const MovieCall = async () => {
-    const data = await axios.get(Api, {
-      params: {
-        api_key: "72e0c8cd6030b35d4994183640959b01",
-        query: input,
-      },
-    });
-    const results = data.data.results;
-    setMoviesData(results);
-  };
-
   useEffect(() => {
+    const MovieCall = async () => {
+      const data = await axios.get(Api, {
+        params: {
+          api_key: "72e0c8cd6030b35d4994183640959b01",
+          query: input,
+        },
+      });
+      const results = data.data.results;
+      setMoviesData(results);
+    };
     MovieCall();
-  }, [input]);
+  }, [input, Api]);
 
   return (
     <Fragment>
