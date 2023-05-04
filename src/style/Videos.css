@@ -1,6 +1,17 @@
 body{
     overflow-x: hidden;
 }
+
+h5 {
+    text-align: center;
+    color: darkcyan;
+    margin-bottom: -15px;
+}
+
+h6 {
+    text-align: center;
+}
+
 .movies-container{
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +50,7 @@ body{
 .movies-container h3, .movies-container img{
     cursor: pointer;
     transition: .7s;
+    text-align: center;
 }
 .movies-container img:hover{
     transform: scale(1.05);
@@ -55,20 +67,20 @@ body{
     display: flex;
     justify-content: center;
 }
-#playIcon{
+/* #playIcon{
     position: absolute;
     bottom: 70px;
     left: 20px;
     visibility: visible;
     z-index: 100;
     cursor: pointer;
-}
-#Exit1{
+} */
+/* #Exit1{
     position: absolute;
     margin-left: 475px;
     margin-top: 67px;
     z-index: 999;
-}
+} */
 #Nothing{
     color: green;
 }
