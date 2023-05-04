@@ -11,7 +11,7 @@ function Movies() {
   const { toggle, inputValue } = useContext(Container);
   const input = inputValue;
   const [moviesData, setMoviesData] = useState([]);
-  const [trailer, setTrailer] = useState(true);
+  const [trailer] = useState(true);
   const Shown = input ? "search" : "discover";
   const Api = `https://api.themoviedb.org/3/${Shown}/movie`;
   const Images = "https://image.tmdb.org/t/p/w500";
